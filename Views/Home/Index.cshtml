@@ -1,0 +1,367 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Carousel Start -->
+<div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                    <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                        <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">We Will Keep You An Awesome Look</h1>
+                        <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-map-marker-alt text-primary me-3"></i>Kuet Road, Teligati, Khulna</h4>
+                        <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-phone-alt text-primary me-3"></i>+8801736-945957</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                    <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                        <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">Luxury Haircut at Affordable Price</h1>
+                        <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-map-marker-alt text-primary me-3"></i>Kuet Road, Teligati, Khulna</h4>
+                        <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-phone-alt text-primary me-3"></i>+8801736-945957</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- Carousel End -->
+<!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="d-flex flex-column">
+                    <img class="img-fluid w-75 align-self-end" src="~/img/BarbarAnish.jpg" alt="Head Barbar Image">
+                    <div class="w-50 bg-secondary p-5" style="margin-top: -25%;">
+                        <h1 class="text-uppercase text-primary mb-3">25 Years</h1>
+                        <h2 class="text-uppercase mb-0">Experience</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <p class="d-inline-block bg-secondary text-primary py-1 px-4">About Us</p>
+                <h1 class="text-uppercase mb-4">More Than Just A Haircut. Learn More About Us!</h1>
+                <p>Welcome to our hair salon website, your ultimate destination for all your haircare needs. Our beautifully designed website showcases our expertise, passion, and commitment to providing exceptional salon services. Discover our diverse range of hairstyles through stunning imagery that will inspire and ignite your creativity. With a user-friendly interface, you can easily navigate through our services, pricing, and convenient booking options. Explore testimonials from satisfied clients and witness their stunning transformations through before-and-after photos. Our mobile-responsive website ensures a seamless browsing experience, whether you're on your computer or smartphone. Join us on this digital journey and experience the essence of our salon, where style meets innovation.</p>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h3 class="text-uppercase mb-3">Since 1990</h3>
+                        <p class="mb-0">
+                            With a rich history spanning over three decades, we have been proudly serving our valued clients since 1990. Our longevity speaks volumes about our expertise, trustworthiness, and commitment to delivering exceptional hair services. Join us on this journey as we continue to exceed expectations and create timeless beauty for years to come.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="text-uppercase mb-3">1000+ clients</h3>
+                        <p class="mb-0">
+                            With a strong and loyal clientele of over 1000 satisfied individuals, we take great pride in the trust placed in us by our valued clients. Their unwavering support is a testament to our dedication, expertise, and personalized approach to haircare. Join our community of delighted clients and experience the difference that sets us apart.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+<!-- Service Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <p class="d-inline-block bg-secondary text-primary py-1 px-4">Services</p>
+            <h1 class="text-uppercase">What We Provide</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                    <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                        <img class="img-fluid" src="img/haircut.png" alt="">
+                    </div>
+                    <div class="ps-4">
+                        <h3 class="text-uppercase mb-3">Haircut</h3>
+                        <p>We specialize in delivering impeccable haircuts tailored to your unique style. Experience the artistry of our skilled barbers and leave looking and feeling your best.</p>
+                        <span class="text-uppercase text-primary"> Starts from 100 taka</span>
+                    </div>
+                    <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fa fa-plus text-primary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                    <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                        <img class="img-fluid" src="img/beard-trim.png" alt="">
+                    </div>
+                    <div class="ps-4">
+                        <h3 class="text-uppercase mb-3">Beard Trim</h3>
+                        <p>Enhance your facial appearance with our professional beard trim service. Our skilled barbers will sculpt and groom your beard to perfection, leaving you with a refined and dapper look. Experience the difference at our barber shop today.</p>
+                        <span class="text-uppercase text-primary">Starts from 120 taka</span>
+                    </div>
+                    <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fa fa-plus text-primary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                    <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                        <img class="img-fluid" src="img/mans-shave.png" alt="">
+                    </div>
+                    <div class="ps-4">
+                        <h3 class="text-uppercase mb-3">Shaving</h3>
+                        <p>Indulge in the ultimate grooming experience with our luxurious man's shave service. Relax as our expert barbers provide a close and precise shave, leaving your skin smooth, refreshed, and rejuvenated. Unwind and enjoy the art of traditional shaving at our barber shop.</p>
+                        <span class="text-uppercase text-primary">Starts from 120 taka</span>
+                    </div>
+                    <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fa fa-plus text-primary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                    <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                        <img class="img-fluid" src="img/hair-dyeing.png" alt="">
+                    </div>
+                    <div class="ps-4">
+                        <h3 class="text-uppercase mb-3">Hair Dyeing</h3>
+                        <p>
+                            Transform your look with our exceptional hair dyeing service. Our experienced colorists will help you achieve vibrant, stunning hair color that suits your personality and style. Step into a world of endless possibilities and let us create a truly captivating hair color for you.
+                        </p>
+                        <span class="text-uppercase text-primary">Starts from 200 taka</span>
+                    </div>
+                    <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fa fa-plus text-primary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                    <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                        <img class="img-fluid" src="img/mustache.png" alt="">
+                    </div>
+                    <div class="ps-4">
+                        <h3 class="text-uppercase mb-3">Facial</h3>
+                        <p>Rejuvenate your skin with our invigorating men's facial. Our tailored treatments cleanse, exfoliate, and nourish your skin, leaving it refreshed, hydrated, and youthful. Experience the ultimate relaxation and skincare at our barber shop. Elevate your grooming routine today.</p>
+                        <span class="text-uppercase text-primary">Starts from 300 taka</span>
+                    </div>
+                    <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fa fa-plus text-primary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                    <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                        <img class="img-fluid" src="img/stacking.png" alt="">
+                    </div>
+                    <div class="ps-4">
+                        <h3 class="text-uppercase mb-3">Massage</h3>
+                        <p>Indulge in blissful relaxation with our head and body massage service. Our skilled therapists will knead away tension and stress, leaving you feeling revitalized and recharged. Escape the hustle and unwind in our tranquil oasis. Experience the soothing power of massage at our barber shop.</p>
+                        <span class="text-uppercase text-primary">Starts from 90 taka</span>
+                    </div>
+                    <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fa fa-plus text-primary"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+<!-- Price Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+                    <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Price & Plan</p>
+                    <h1 class="text-uppercase mb-4">Check Out Our Barber Services And Prices</h1>
+                    <div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                            <h6 class="text-uppercase mb-0">Haircut</h6>
+                            <span class="text-uppercase text-primary">>= 100.00 taka</span>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                            <h6 class="text-uppercase mb-0">Beard Trim</h6>
+                            <span class="text-uppercase text-primary">>= 90.00 taka</span>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                            <h6 class="text-uppercase mb-0">Shaving</h6>
+                            <span class="text-uppercase text-primary">>= 150.00 taka</span>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                            <h6 class="text-uppercase mb-0">Hair Dyeing</h6>
+                            <span class="text-uppercase text-primary">>= 300.00 taka</span>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                            <h6 class="text-uppercase mb-0">Facial</h6>
+                            <span class="text-uppercase text-primary">>= 400.00 taka</span>
+                        </div>
+                        <div class="d-flex justify-content-between py-2">
+                            <h6 class="text-uppercase mb-0">Massage</h6>
+                            <span class="text-uppercase text-primary">>= 300 taka</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="h-100">
+                    <img class="img-fluid h-100" src="img/price.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Price End -->
+<!-- Team Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <p class="d-inline-block bg-secondary text-primary py-1 px-4">Our Team</p>
+            <h1 class="text-uppercase">Meet Our team</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid" src="~/img/BarberShupto.jpg" alt="">
+                        <div class="team-social">
+                            <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-secondary text-center p-4">
+                        <h5 class="text-uppercase">Shupto</h5>
+                        <span class="text-primary">Head Barbar</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid" src="~/img/Trad.jpg" alt="">
+                        <div class="team-social">
+                            <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-secondary text-center p-4">
+                        <h5 class="text-uppercase">Raad Shamat</h5>
+                        <span class="text-primary">Hair Stylist</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid" src="~/img/StylistPriom.jpg" alt="">
+                        <div class="team-social">
+                            <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-secondary text-center p-4">
+                        <h5 class="text-uppercase">Priom Pal</h5>
+                        <span class="text-primary">Colorist</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid" src="~/img/BarbarAnish.jpg" alt="">
+                        <div class="team-social">
+                            <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square" asp-controller="temp" asp-action="Create"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-secondary text-center p-4">
+                        <h5 class="text-uppercase">Anish Roy</h5>
+                        <span class="text-primary">Salon Manager</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+<!-- Working Hours Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="h-100">
+                    <img class="img-fluid h-100" src="img/open.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+                    <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Working Hours</p>
+                    <h1 class="text-uppercase mb-4">Professional Barbers Are Waiting For You</h1>
+                    <div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                            <h6 class="text-uppercase mb-0">Monday</h6>
+                            <span class="text-uppercase">09 AM - 09 PM</span>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                            <h6 class="text-uppercase mb-0">Tuesday</h6>
+                            <span class="text-uppercase">09 AM - 09 PM</span>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                            <h6 class="text-uppercase mb-0">Wednesday</h6>
+                            <span class="text-uppercase">09 AM - 09 PM</span>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                            <h6 class="text-uppercase mb-0">Thursday</h6>
+                            <span class="text-uppercase">09 AM - 09 PM</span>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                            <h6 class="text-uppercase mb-0">Friday</h6>
+                            <span class="text-uppercase">09 AM - 09 PM</span>
+                        </div>
+                        <div class="d-flex justify-content-between py-2">
+                            <h6 class="text-uppercase mb-0">Sat / Sun</h6>
+                            <span class="text-uppercase text-primary">Closed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Working Hours End -->
+<!-- Testimonial Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <p class="d-inline-block bg-secondary text-primary py-1 px-4">Testimonial</p>
+            <h1 class="text-uppercase">What Our Clients Say!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/Tajit.jpg' alt=''>">
+                <h4 class="text-uppercase">Aminul Islam Nayeem</h4>
+                <p class="text-primary">Lecturer</p>
+                <span class="fs-5">
+                    I absolutely love the hair salon's exceptional service! Their talented stylists create stunning transformations, leaving me feeling confident and beautiful. The attention to detail and friendly atmosphere make every visit a delightful experience. Highly recommended!
+                </span>
+            </div>
+            <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/Trobins.jpg' alt=''>">
+                <h4 class="text-uppercase">Robins Chowdhury</h4>
+                <p class="text-primary">Plumber</p>
+                <span class="fs-5">The hair salon's service is top-notch! From stylish cuts to amazing color, they always deliver fantastic results. Highly satisfied!</span>
+            </div>
+            <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/Tnayeem.jpg' alt=''>">
+                <h4 class="text-uppercase">Ajit Sarkar</h4>
+                <p class="text-primary">Student</p>
+                <span class="fs-5">
+                    The hair salon provides excellent service, delivering beautiful hairstyles and a delightful experience. Highly recommended for all your hair needs!
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+

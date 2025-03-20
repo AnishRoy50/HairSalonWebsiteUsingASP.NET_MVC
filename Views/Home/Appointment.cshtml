@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Appointment";
+}
+@*page header start*@
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center py-5">
+        <h1 class="display-3 text-white text-uppercase mb-3 animated slideInDown">Appointment</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center text-uppercase mb-0">
+                <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                
+                <li class="breadcrumb-item text-primary active" aria-current="page">Appointment</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Contact Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Center align the form -->
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="bg-secondary p-5 rounded">
+                    <h2 class="text-center text-uppercase mb-4">Schedule an Appointment</h2>
+                    <form action="/appointments/create" method="post">
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control form-control-lg" id="phone" name="phone" placeholder="Your Phone Number" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="date" class="form-control form-control-lg" id="date" name="date" placeholder="Preferred Date" required>
+                        </div>
+                        <div class="mb-3">
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Services
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <li><input class="form-check-input" type="checkbox" id="haircut" name="services[]" value="Haircut"><label class="form-check-label" for="haircut">Haircut</label></li>
+                                    <li><input class="form-check-input" type="checkbox" id="coloring" name="services[]" value="Coloring"><label class="form-check-label" for="coloring">Coloring</label></li>
+                                    <li><input class="form-check-input" type="checkbox" id="styling" name="services[]" value="Styling"><label class="form-check-label" for="styling">Styling</label></li>
+                                    <!-- Add more services options here -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control form-control-lg" name="message" placeholder="Any specific requests or additional information?" id="message" rows="4"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-lg" type="submit">Schedule Appointment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
